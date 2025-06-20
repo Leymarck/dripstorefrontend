@@ -1,4 +1,4 @@
-import 'primeicons/primeicons.css';
+
 
 
 :root {
@@ -16,4 +16,33 @@ import 'primeicons/primeicons.css';
   --color-light-gray-2: #CCCCCC;
   --color-light-gray-3: #F5F5F5;
   --color-white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none ;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+button {
+  background-color: #C92071;
+  color: #F5F5F5;
+  font-weight: bold;
+  padding: 3px;
+  margin: 3px;
+  width: 100px;
+  border-radius: 9px;
+  height: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #991956;
+
 }

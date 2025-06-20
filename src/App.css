@@ -14,3 +14,15 @@
   --color-light-gray-3: #F5F5F5;
   --color-white: #FFFFFF;
 }
+
+* {
+  padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none ;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
