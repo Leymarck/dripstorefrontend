@@ -21,26 +21,12 @@ const ProductCardContainer = styled.div`
   --color-white: #FFFFFF;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none ;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div {
-    height: 50%;
-border: solid 1px black;
-width: 30%;
-padding: 5px;
-padding-top: 0;
-
-}
-
+background-color: #FFFFFF;
+box-shadow: 0 0 10px #474747;
+box-sizing: border-box;
+border-radius: 4%;
+padding: 20px;
+height: 250px;
 
 
 div div {
@@ -100,7 +86,10 @@ const ProductCard = ({off, type, image, name, oprice, aprice, children}) => {
                 <img className='productimg' src={image} />
                 <h6> {type} </h6>
                 <h3> {name} </h3>
-                <div className='price'> <p> $ {oprice} </p> <p className='aprice'> $ {aprice} </p> </div>
+                <div className='price'> 
+                    <p> $ {oprice} </p> 
+                    <p className='aprice'> $ {aprice} </p>
+                </div>
                 {children}
             </div>
         </ProductCardContainer> 

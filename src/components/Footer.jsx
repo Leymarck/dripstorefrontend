@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
@@ -38,7 +39,7 @@ footer {
 } & div {
     width: 20%;
 } & img {
-    padding: 30px 0px;
+    padding: 0px 0px;
 }
 
 ul {

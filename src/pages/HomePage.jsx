@@ -19,17 +19,27 @@ const HomeContainer = styled.main`
   --color-white: #FFFFFF;
 }
 
-main section .emalta {
-    display: flex;
+width: 100%;
+
+main {
+    width: 100%;
+    padding: 20px 60px 0 60px;
 }
 
-
+.pcarddiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+  } 
 `
 
 
 const Home = () => {
     return ( 
-        <>
+        <HomeContainer>
         <main>
             <section className="painelincial"> 
                 <div>
@@ -69,9 +79,13 @@ const Home = () => {
             </section>
             <section className="emalta">
                 <h3> Produtos em Alta <p> Ver todos </p> </h3>
-                <ProductCard off="30% " type="Tênis" image="/produc-image-1.jpeg" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
-                <ProductCard off="30% " type="Tênis" image="/produc-image-1.jpeg" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
-                <ProductCard off="30% " type="Tênis" image="/produc-image-1.jpeg" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <div className="pcarddiv"> 
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                </div>
             </section>
             <section>
                 <div>
@@ -85,7 +99,7 @@ const Home = () => {
                 </div>
             </section>
             </main>
-        </>
+        </HomeContainer>
     );
 }
  

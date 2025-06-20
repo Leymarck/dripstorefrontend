@@ -6,7 +6,7 @@ const Header = () => {
     return ( 
         <>
             <header>
-            <img src="./assets/logo-header.svg"/>
+            <NavLink to={"/"} > <img src="./assets/logo-header.svg"/> </NavLink>
             <span> 
                 <input type="text" placeholder='Pesquisar produto...'/> 
                 <i className="pi pi-search" style={{color: 'slateblue'}}></i> 
