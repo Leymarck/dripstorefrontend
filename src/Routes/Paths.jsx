@@ -7,6 +7,7 @@ import ProductListing from "../components/ProductListing";
 import Home from "../pages/HomePage";
 import PageLayout from "../layout/PageLayout";
 import MeusPedidos from "../pages/MeusPedidos";
+import ProductListingPage from "../pages/ProductListingPage";
 
 const Paths = () => {
     return ( 
@@ -15,7 +16,7 @@ const Paths = () => {
         <Routes>
             <Route path="/" element={<PageLayout/>}>
             <Route path="/" element={<Home />} />
-            <Route path="/produtos" element={<ProductListing />} />
+            <Route path="/produtos" element={<ProductListingPage />} />
             <Route path="/categorias" element={<ProductDetails />} />
             <Route path="/meuspedidos" element={<MeusPedidos />} />
             <Route path="*" element={<NotFound />} />
