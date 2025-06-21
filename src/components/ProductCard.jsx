@@ -27,6 +27,13 @@ box-sizing: border-box;
 border-radius: 4%;
 padding: 20px;
 height: 250px;
+margin-bottom: 60px;
+cursor: pointer;
+
+.box:hover {
+    transform: scale(1.3);
+        transition: 2s;
+}
 
 
 div div {
@@ -39,8 +46,8 @@ div div {
     font-size: small;
     font-weight: bold;
     position: relative;
-    top: 3cap;
-    left: 4%;
+    top: 1cap;
+    left: 1%;
     border: transparent;
 }
 
@@ -60,6 +67,7 @@ h3 {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 6px;
 }
 
 p {
@@ -74,16 +82,24 @@ p {
 
 .productimg {
     width: 200px;
+    rotate: -30deg;
+    padding: 10px 0 40px 0;
 } 
+
+.boxii {
+    margin: 60px 0 60px 0;
+}
 `
 
 
 const ProductCard = ({off, type, image, name, oprice, aprice, children}) => {
     return ( 
         <ProductCardContainer>
-            <div>
+            <div className='box' >
                 <div> {off} OFF </div>
                 <img className='productimg' src={image} />
+            </div>
+            <div className='boxii'> 
                 <h6> {type} </h6>
                 <h3> {name} </h3>
                 <div className='price'> 

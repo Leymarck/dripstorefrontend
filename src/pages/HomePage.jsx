@@ -34,6 +34,27 @@ main {
     margin: 20px auto;
     width: 100%;
   } 
+
+.produtosemalta {
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+}
+
+.vertodos {
+    color: #C92071;
+    display: flex;
+    gap: 9px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.vertodos:hover {
+    transform: scale(1.3);
+        transition: 2s;
+}
+
+
 `
 
 
@@ -78,8 +99,13 @@ const Home = () => {
                 </div>
             </section>
             <section className="emalta">
-                <h3> Produtos em Alta <p> Ver todos </p> </h3>
+                <h3 className="produtosemalta"> Produtos em Alta <p className="vertodos"> Ver todos <i className="pi pi-arrow-right" style={{color: '#C92071'}}></i>  </p> </h3>
                 <div className="pcarddiv"> 
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
+                <ProductCard off="30%" type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
                 <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
                 <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
                 <ProductCard off="30% " type="Tênis" image="/productcardimage.png" name="K-Swiss V8 - Masculino" oprice="200" aprice="100" />
