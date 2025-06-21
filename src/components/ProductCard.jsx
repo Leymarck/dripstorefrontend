@@ -36,9 +36,9 @@ cursor: pointer;
 }
 
 
-div div {
+.off {
     border-radius: 9px;
-    background-color: #52CA76;
+    background-color: #E7FF86;
     color: #474747;
     text-align: center;
     width: 40%;
@@ -96,7 +96,7 @@ const ProductCard = ({off, type, image, name, oprice, aprice, children}) => {
     return ( 
         <ProductCardContainer>
             <div className='box' >
-                <div> {off} OFF </div>
+                <div className='off'> {off} OFF </div>
                 <img className='productimg' src={image} />
             </div>
             <div className='boxii'> 
